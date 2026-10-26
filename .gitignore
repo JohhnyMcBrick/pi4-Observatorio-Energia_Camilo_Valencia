@@ -1,0 +1,21 @@
+# Entorno virtual de Python (cada quien crea el suyo)
+.venv/
+venv/
+
+# Datos descargados: se regeneran con el pipeline, no se suben a GitHub
+data/bronze/*
+!data/bronze/.gitkeep
+data/silver/
+data/gold/
+*.duckdb
+
+# Secretos y configuración local
+.env
+
+# Archivos temporales
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+Thumbs.db
+*.zip
